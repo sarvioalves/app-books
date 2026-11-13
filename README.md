@@ -1,70 +1,80 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 📚 App Books
 
-## Available Scripts
+Aplicação front-end desenvolvida em **React** para pesquisa, visualização e gerenciamento de livros. O projeto conta com navegação entre rotas, componentização de interface e integração com serviços externos (API).
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🚀 Funcionalidades
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [x] Listagem e exibição de catálogo de livros
+- [x] Barra de pesquisa para filtrar obras por título/autor *(ajuste conforme o seu código)*
+- [x] Navegação entre páginas utilizando roteamento dinâmico
+- [x] Integração com API REST para consumo e envio de dados *(ex: favoritos, estante)*
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🛠️ Tecnologias Utilizadas
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* **[React](https://react.dev)** — Biblioteca principal para construção da interface
+* **[React Router](https://reactrouter.com)** — Gerenciamento de rotas da aplicação *(verifique se usou `react-router-dom`)*
+* **[Axios](https://axios-http.com) / Fetch API** — Consumo de dados na camada de serviços *(deixe apenas o que você usou)*
+* **CSS3 / Styled Components** — Estilização dos componentes *(ajuste conforme sua escolha)*
+* **JavaScript (ES6+)**
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📂 Estrutura de Pastas
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+A arquitetura dentro de `src/` está organizada da seguinte forma:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```text
+src/
+├── componentes/   # Componentes reutilizáveis da interface (Header, Pesquisa, Cards, etc.)
+├── imagens/       # Ativos visuais, ícones e capas utilizados no projeto
+├── rotas/         # Páginas principais e configuração de navegação
+├── servicos/      # Comunicação e requisições com a API
+├── index.js       # Ponto de entrada da aplicação React
+└── App.test.js    # Testes automatizados
+```
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## ⚙️ Como Executar o Projeto Localmente
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Siga os passos abaixo para rodar a aplicação na sua máquina:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Pré-requisitos
+Certifique-se de ter o **[Node.js](https://nodejs.org)** e o **npm** (ou **yarn**) instalados.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Passo a passo
 
-## Learn More
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. **Acesse a pasta do projeto:**
+   ```bash
+   cd app-books
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. **Instale as dependências:**
+   ```bash
+   npm install
+   ```
 
-### Code Splitting
+4. **Inicie o servidor de desenvolvimento:**
+   ```bash
+   npm start
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+5. Abra o navegador e acesse `http://localhost:3000`.
 
-### Analyzing the Bundle Size
+> **Nota:** Se este projeto depender de uma API back-end rodando localmente (como um servidor Node/Express), lembre-se de iniciá-la antes ou configurar a URL base na pasta `src/servicos/`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 👨‍💻 Autor
 
-### Making a Progressive Web App
+Desenvolvido por **Sárvio Alves**.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[![GitHub](https://shields.io)](https://github.com/sarvioalves)
